@@ -1,0 +1,39 @@
+Install pytest = pip install pytest
+
+1.Basics of pytest
+    1. Any pytest file should start with test_
+    2. Pytest method names should start with test
+    3. Any code should be wrapped in method only
+    4. Run through the command line
+            1. Navigate the folder
+             2. py.test
+            3. py.test -v  --> more details
+            4. py.test -v -s --> All logs
+
+             * python3 -m pytest
+             * python3 -m pytest -v -s test_demo2.py
+             * Run through tag name -->  python3 -m pytest -m smoke -v -s  (@pytest.mark.smoke)
+             * Run through thr browser -->  python3 -m pytest test_e2e.py --html=report.html -s --browser_name chrome
+             * For generate report -->  python3 -m pytest  --html = reports/report.html
+             * For multiple run at time = python3 -m pytest -n 2 --html reports/report.html
+
+2. What are the fixture:
+    1. It is use for prerequisite stuff like - Invoke browser
+
+3. conftest file --> 1. user for fixture file execute in all test file
+                     2. Use fixture to class level to applied for all test methods -- @pytest.mark.usefixtures("setup")
+                     3. Use fixture to class level to applied for start test and end test -- @pytest.fixture(scope="class") in fixture file
+                     4. Parameterise fixture
+
+4. HTML Report --> 1. python3 -m pip install pytest-html
+                   2.  python3 -m pytest --html=report.html -s
+
+
+5. Tags -->
+        1. @pytest.mark.smoke
+        2. @pytest.mark.skip
+        3. @pytest.mark.xfail - use for when test case is failed and want be shown in report
+
+
+
+

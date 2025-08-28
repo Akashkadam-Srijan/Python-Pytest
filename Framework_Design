@@ -1,0 +1,19 @@
+
+| **Topic**              | **Key Points / Commands**                                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Install Pytest**     | `pip install pytest`                                                                                               |
+| **Naming Conventions** | Files: `test_*.py` or `*_test.py` <br> Functions: start with `test_`                                               |
+| **Run Tests**          | `pytest` → Run all <br> `pytest test_file.py` → Run file <br> `pytest test_file.py::test_func` → Run specific test |
+| **Run by Keyword**     | `pytest -k "login"`                                                                                                |
+| **Tags (Markers)**     | `python<br>@pytest.mark.smoke` <br> Run: `pytest -m smoke`                                                         |
+| **Skip Tests**         | `@pytest.mark.skip` <br> `@pytest.mark.skipif(condition, reason="msg")`                                            |
+| **Fixtures**           | Provide setup/teardown <br> `python<br>@pytest.fixture<br>def sample(): return "data"`                             |
+| **Conftest File**      | Store common fixtures for multiple test files                                                                      |
+| **Fixture Scopes**     | `function` (default), `class`, `module`, `session`                                                                 |
+| **Parameterization**   | `python<br>@pytest.mark.parametrize("a,b,res", [(2,3,5), (4,5,9)])`                                                |
+| **Command Line Args**  | `pytest_addoption(parser)` in `conftest.py` <br> Run: `pytest --env=qa`                                            |
+| **HTML Report**        | Install: `pip install pytest-html` <br> Run: `pytest --html=report.html`                                           |
+
+
+1. for parallel run use Plug in = pytest-xdist and run [python3 -m pytest test_e2e.py --html=report.html -s -n 2]
+2. For generate HTML report use = pytest-html

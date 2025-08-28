@@ -1,0 +1,17 @@
+1. Invoke chrome browser
+2. Locators - Xpath, CSS selector, Id,Name, Tagname etc.
+3. For find locators use selector hub plug in
+4. Assertion
+5. Handling the dropdown - Static and Dynamic
+6. Handle dynamic text -  get_attribute("value")
+7. Handle dynamic radio button
+8. Handle alert popup
+9. Implicit wait and Explicit wait
+10. Action class
+11. Handling child windows
+12. Handling Frames
+13. Where we need javascript executor
+14. Sorting table --
+15. Chrome options
+16. How to work with Excel -- openpyxl library
+17. Generic Xpath

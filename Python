@@ -1,0 +1,47 @@
+1. Print Statement
+
+2. Data type -
+    1. Number -  int, float etc
+    2. List - Store multiple datatype ex. value = [1, 2, "Akash", 4.5]
+    3. Tuple - Same like List but tuple is Immutable (No changes after declare) a= (1, 2, "Akash", 4.5)
+    4. Dictionary - Key value pair ex. a = {1:"Firstname, 2: "Lastname"}
+
+3. Program flow control -
+    1. if else condition - Code idendation imp
+    2. For loop - define range--> range(1,6) and range (1,10,2)
+    3. While loop
+
+4. Declare functions -
+        # Define function
+
+        def test():
+            print("Test Function")
+        test()
+
+5. Opps -
+    1. Classes
+    2. Object --> classname()
+    3. Constructor --> define by __init__
+    4. Self keyword --> it is Mandatory to define Constructor or Methods
+    5. Inheritance --> access parent class properties
+    6. String -->
+
+ 6. Read and write files
+    1. Read --> file = open('filename')
+                file.read()--> read char
+                file.readline() --> read single line
+                file.readlines() --> read multiple line
+                file.close() --> close the file
+
+    2. Write --> write() method use
+
+ 7. Exception Handling:
+       1. Try - We can write here code
+       2. Except - Here we can handle the exception
+              eg. try:
+                    ---code
+                  except Exception as e:
+                        print(e)
+       3. Finally - Always executed
+
+
