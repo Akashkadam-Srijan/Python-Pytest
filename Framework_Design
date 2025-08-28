@@ -17,3 +17,4 @@
 
 1. for parallel run use Plug in = pytest-xdist and run [python3 -m pytest test_e2e.py --html=report.html -s -n 2]
 2. For generate HTML report use = pytest-html
+
