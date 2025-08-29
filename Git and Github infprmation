@@ -1,3 +1,19 @@
 1. For setup we need to setup global username and email id
    git config --global user.name "Your Name"
    git config --global user.email "
+
+2. git clone <repository_url> (to clone a repository)
+
+2. To check the configuration
+   git config --list
+
+3. To initialize a git repository
+    git init
+4. To check the status of the repository
+    git status
+5. To add files to the staging area
+    git add filename
+    git add . (to add all files)
+6. To commit the changes
+    git commit -m "commit message"
+7. To check the commit history
